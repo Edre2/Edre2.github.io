@@ -5,26 +5,30 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="pi.css" />
         <link rel="shortcut icon" href="pi.png">
-        <script type="text/javascript" src="js/verifier-suite.js"></script>
-        <title>π - Apprendre une suite</title>
+        <script type="text/javascript" src="js/verifier-suites.js"></script>
+        <title>π - Apprendre des suites</title>
     </head>
 
-    <body onload="random_sequence()">
+    <body onload="random_suites()">
         <div id="main">
-            <div class="center"><h1><a href="index.html">Apprendre une suite</a></h1></h1></div>
+            <div class="center"><h1><a href="index.html">Apprendre des suites</a></h1></h1></div>
             <div id="pi">
                 <div class="center colonne">
                     <div class="milieu espace-haut-bas">
-                        <label for="nb_de_chiffres">Nombre de chiffres :</label>
+                        <label for="nb_de_chiffres">Nombre de chiffres par suite :</label>
                         <input id="nb_de_chiffres" type="text" class="texte-centre" placeholder="10" maxlength="2">
                     </div>
-
                     <div class="milieu espace-haut-bas">
+                        <label for="nb_de_suites">Nombre de suites :</label>
+                        <input id="nb_de_suites" type="text" class="texte-centre" placeholder="10" maxlength="2">
+                    </div>
+
+                    <div class="milieu espace-haut-bas" id="suites">
                         <label for="suite-memoire" id="suite" class="espace-caracters fill">0000000000</label>
                     </div>
 
                     <div class="milieu espace-haut-bas">
-                        <button id="verifier" class="button fill"    onclick="cacher_suite()">Cacher la suite</button>
+                        <button id="verifier" class="button fill"    onclick="restituer_suites()">Restituer les suites</button>
                     </div>
 
                     <div class="milieu espace-haut-bas">
@@ -32,7 +36,7 @@
                     </div>
 
                     <div class="center espace-haut-bas">
-                        <p id="correction" class="text-centre"></p>
+                        <p id="correction" class="text-centre">En dévellopement</p>
                     </div>
                 </div>
         </div>

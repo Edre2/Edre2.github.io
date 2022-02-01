@@ -17,12 +17,19 @@
    padding-top: 20px;
    padding-bottom: 20px;
 	flex: 1;
-}
-/*
-#pi-valeur
+}erik
+
+
+#nb_de_chiffres
 {
-   text-align: justify;
-}*/
+   max-width: 30px;
+}
+
+#suites
+{
+   display: flex;
+   flex-direction: column;
+}
 
 #main
 {  
@@ -182,7 +189,6 @@ strong
 {
    display: inline-block;
    text-decoration: underline;
-   font-size: large;
 }
 
 caption 

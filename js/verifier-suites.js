@@ -1,12 +1,12 @@
 document.onkeyup = function(e) {
     if (e.which == 13) {
-      verifier_suite();
+      random_suites();
     }
   };
 
-function verifier_suite()
+function verifier_suites()
 {
-    let suite = document.getElementById("suite").innerHTML.replace(/ \| /g, '');
+    let suites = document.getElementsByName("suite").innerHTML.replace(/ \| /g, '');
     let mot = document.getElementById("suite-memoire").value.replace(/\s+/g, '');
 
     console.log(mot, suite);
@@ -49,29 +49,43 @@ function verifier_suite()
     document.getElementById("suite-memoire").value = "";
 }
 
-function random_sequence()
+function random_suites()
 {
-  document.getElementById("suite").innerHTML = "";
+  document.getElementById("suites").innerHTML = "";
+
+  let nb_de_suites = 10;
+  if (! isNaN(Number(document.getElementById("nb_de_suites").value)) && document.getElementById("nb_de_suites").value != "")
+  {
+    nb_de_suites = Number(document.getElementById("nb_de_suites").value);
+  }
 
   let nb_de_chiffres = 10;
-
   if (! isNaN(Number(document.getElementById("nb_de_chiffres").value)) && document.getElementById("nb_de_chiffres").value != "")
   {
     nb_de_chiffres = Number(document.getElementById("nb_de_chiffres").value);
   }
   
-  for (let i = 0; i < nb_de_chiffres; i++)
+  for (let j = 0; j < nb_de_suites; j++)
   {
-    document.getElementById("suite").innerHTML += Math.floor( (Math.random() * 9) + 1 );
-
-    if ( i % 2 == 1 && i != nb_de_chiffres - 1)
+    document.getElementById("suites").innerHTML += '<div class="milieu espace-haut-bas"><label for="suite-memoire-'+j+'" id="suite-' + j+ '" class="espace-caracters fill">';
+    
+    document.getElementById("suites").innerHTML += '</label></div>';
+  }
+  for (let j = 0; j < nb_de_suites; j++)
+  {
+    for (let i = 0; i < nb_de_chiffres; i++)
     {
-      document.getElementById("suite").innerHTML += " | ";
+        document.getElementById("suite-"+j).innerHTML += Math.floor( (Math.random() * 9) + 1 );
+
+        if ( i % 2 == 1 && i != nb_de_chiffres - 1)
+        {
+        document.getElementById("suite-"+j).innerHTML += " | ";
+        }
     }
   }
 }
 
-function cacher_suite()
+function restituer_suites()
 {
   console.log(document.getElementById("suite").classList);
   if (document.getElementById("suite").classList.contains("text-invisible"))
