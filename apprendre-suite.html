@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!-- En-tête de la page -->
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="pi.css" />
+        <link rel="shortcut icon" href="pi.png">
+        <script type="text/javascript" src="js/verifier-suite.js"></script>
+        <title>π - Apprendre une suite</title>
+    </head>
+
+    <body onload="random_sequence()">
+        <div id="main">
+            <div class="center"><h1><a href="index.html">Apprendre une suite</a></h1></h1></div>
+            <div id="pi">
+                <div class="center colonne">
+                <div class="milieu espace-haut-bas">
+                        <label for="suite-memoire" id="suite" class="espace-caracters fill">0000000000</label>
+                    </div>
+                    <div class="milieu espace-haut-bas">
+                        <button id="verifier" class="button fill"    onclick="cacher_suite()">Cacher la suite</button>
+                    </div>
+                <div class="milieu espace-haut-bas">
+                    <input type="text" id="suite-memoire" class="espace-caracters text-centre"> <br /><br />
+                </div>
+                <div class="center espace-haut-bas">
+                    <p id="correction"></p>
+                </div>
+            </div>
+        </div>
+
+        <footer> 
+            <p id="droits" class="center"> Erik 2022 - GPL v3</p> 
+            <a href="https://github.com/Edre2/pi" target="_blank">Code source</a>
+          </footer>
+    </body>
+</html>

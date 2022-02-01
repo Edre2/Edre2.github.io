@@ -1,0 +1,99 @@
+1 thé / toit /dé
+2 âne / nez
+3 amis / mat / semer
+4 rat 
+5 lion
+6 chat
+7 quai
+8 fou
+9 épée
+10 danser / tasse
+11 tante / tata
+12 tonneau 
+13 dame
+14 taureau
+15 talon
+16 Tuches
+17 taguer
+18 étoffe / dauphin
+19 taper / tapis
+20 noce
+21 Nathan
+22 naine
+23 nem / nam
+24 noir
+25 noël
+26 neige
+27 Naka
+28 naïf / navet / navire
+29 nappe
+30 masser
+31 maths 
+32 mine
+33 maman
+34 sous-marin 
+35 malle
+36 manger / magie
+37 magasin
+38 muffin
+39 myope
+40 raser
+41 route
+42 ruine
+43 rame
+44 rire
+45 râler
+46 ruche
+47 raquette
+48 ravin
+49 robot / rap
+50 lasso
+51 latte
+52 lune
+53 lama
+54 lire
+55 lilas / soleil
+56 luge
+57 lac
+58 lave / laver
+59 lapin
+60 chasser
+61 château
+62 chaîne
+63 chameau
+64 char
+65 châle
+66 juge
+67 échec
+68 cheveu
+69 jeep / jupe / chapeau
+70 gaz / caisse
+71 gâteau /  cadeau
+72 gainer / canon
+73 Camus / camion
+74 craie
+75 gueuler / clou / colle
+76 cage 
+77 caca
+78 café
+79 cape
+80 vase / fusée 
+81 fête
+82 vannes 
+83 affamé / fumé 
+84 phare
+85 vallée / vélo / valet
+86 vache
+87 phoque
+88 fève
+89 vampire
+90 bus
+91 patte / batte
+92 panneau
+93 puma / pomme
+94 purée
+95 palais
+96 poncho / page
+97 paquet / pâque
+98 paver / baver / baffer
+99 bébé
