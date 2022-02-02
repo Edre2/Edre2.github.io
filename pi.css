@@ -17,10 +17,9 @@
    padding-top: 20px;
    padding-bottom: 20px;
 	flex: 1;
-}erik
+}
 
-
-#nb_de_chiffres
+#nb_de_chiffres, #nb_de_suites
 {
    max-width: 30px;
 }

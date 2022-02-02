@@ -8,9 +8,7 @@ function verifier_suite()
 {
     let suite = document.getElementById("suite").innerHTML.replace(/ \| /g, '');
     let mot = document.getElementById("suite-memoire").value.replace(/\s+/g, '');
-
-    console.log(mot, suite);
-
+    
     let correct = true;
 
     for (let i = 0; i < suite.length; i++)
@@ -73,7 +71,6 @@ function random_sequence()
 
 function cacher_suite()
 {
-  console.log(document.getElementById("suite").classList);
   if (document.getElementById("suite").classList.contains("text-invisible"))
   {
     document.getElementById("suite").classList.remove("text-invisible");

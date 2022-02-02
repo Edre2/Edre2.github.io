@@ -15,9 +15,6 @@ function verifier_association()
 
     let possible = association_ms[nombre];
 
-    /*console.log(nombre, mot, possible);*/
-
-
     let correct = false;
 
     for (let i = 0; i < possible.length; i++)

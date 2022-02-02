@@ -9,7 +9,6 @@ document.onkeyup = function(e) {
 function verifier()
 {
     let user_pi = document.getElementById("pi_value").value.replace(/\s+/g, '');
-    console.log(user_pi);
 
     document.getElementById("verification").innerHTML = "";
     document.getElementById("pi_value").value = "";
