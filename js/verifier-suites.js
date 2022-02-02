@@ -6,14 +6,14 @@ document.onkeyup = function(e) {
       {
         random_suites();
       }
-      else if (document.getElementById("verifier").innerHTML == "Valider")
+      /*else if (document.getElementById("verifier").innerHTML == "Valider")
       {
         verifier_suites()
       }
       else if (document.getElementById("verifier").innerHTML == "Apprendre de nouvelles suites")
       {
         apprendre_nouvelles_suites()
-      }
+      }*/
     }
   };
 
@@ -77,7 +77,9 @@ function restituer_suites()
 
   document.getElementById("suites").innerHTML = "";
 
-  for (let j = 0; j < nb_de_suites; j++)
+  document.getElementById("suites").innerHTML += '<div class="milieu espace-haut-bas"><input id="suite-memoire-0" type="text" class="espace-caracters fill" autofocus></label></div>';
+
+  for (let j = 1; j < nb_de_suites; j++)
   {
     document.getElementById("suites").innerHTML += '<div class="milieu espace-haut-bas"><input id="suite-memoire-'+j+'" type="text" class="espace-caracters fill"></label></div>';
   }
@@ -119,7 +121,7 @@ function verifier_suites()
 
     document.getElementById("verifier").innerHTML = "Apprendre de nouvelles suites";
 
-    document.getElementById("verifier").setAttribute("onclick", "apprendre_nouvelles_suites()")
+    document.getElementById("verifier").setAttribute("onclick", "apprendre_nouvelles_suites()");
 }
 
 function apprendre_nouvelles_suites()
@@ -128,5 +130,8 @@ function apprendre_nouvelles_suites()
 
   document.getElementById("verifier").innerHTML = "Restituer les suites";
 
-  document.getElementById("verifier").setAttribute("onclick", "restituer_suites()")
+  document.getElementById("verifier").setAttribute("onclick", "restituer_suites()");
+
+  document.getElementById("nb_de_chiffres").setAttribute("readonly", "false");
+  document.getElementById("nb_de_suites").setAttribute("readonly", "false");
 }
