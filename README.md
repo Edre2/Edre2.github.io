@@ -1,18 +1,12 @@
-# π
+# Un site
 
-Site web pour tester sa connaissance de pi
+Code source de [ce site](https://edre2.github.io/).
+Site web avec une partie sur la mémoire et une sur enigma.
 
-![](CaptureEcran/index.png)
 
-![](CaptureEcran/capture_ecran.png)
+## Mémoire
 
-![](CaptureEcran/pi_valeur.png)
-
-![](CaptureEcran/major_system2.png)
-
-![](CaptureEcran/apprendre-major-system.png)
-
-## Pages
+Toutes les pages ci-dessous sont précédées de `memoire/` :
 
 - `index.html` page d'acceuil avec un lien vers les autres pages
   
@@ -26,7 +20,11 @@ Site web pour tester sa connaissance de pi
 - `major_system.html` une liste possible d'associaions entre nombres et mots
   
 - `apprendre-major-system.html` une page pour apprendre les associations (il faut taper le mot associé au nombre, puis taper sur <Entrer>)
-  
+
+## Enigma
+
+Pour l'instant, il n'y a qu'une seule page sur enigma : `enigma/enigma.html` qui vous permet de coder avec une machine enigma en javascript.
+Pour voir d'autres implémentation de machines enigma, vous pouvez consulter : [ce repos](https://github.com/Edre2/Enigma/).
 
 ## Utilisation
 
