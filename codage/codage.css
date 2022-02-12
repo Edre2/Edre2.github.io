@@ -1,46 +1,51 @@
-#enigma
-{
-	display: flex;
-	justify-content: left;
-   flex-direction: column;
-	justify-content: center;
-   padding-top: 20px;
-   padding-bottom: 20px;
-	flex: 1;
-}
-
-
 #texte_a_coder
 {
 	background-color: #42414d;
 	color: #fbfbfe;
 	font-size: 20px;
-	min-width: 500px;
-	min-height: 200px;
+	height: 300px;
 	margin-bottom: 20px;
-   margin: auto;
+   width: 100%;
+   margin-top: 10px;
+}
+
+#code
+{
+	display: flex;
+	justify-content: left;
+   flex-direction: column;
+	flex: 1;
+}
+
+#result
+{
+   background-color: #42414d;
+	color: #fbfbfe;
+	font-size: 20px;
+   margin: 10px;
 }
 
 #main
 {  
    flex: 1;
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
    padding-left: 15%;
    padding-right: 15%;
    padding-top: 30px;
    padding-bottom: 100px;
 }
 
-#rotors
+#copy:hover
 {
-   display: flex;
-   flex-direction: column;
+   cursor: grab;
 }
 
 html
 {
 	height: 100%;
+   background-color: #2b2a33;
+	color: #909098;
 }
 
 body
@@ -88,7 +93,6 @@ textarea
 
 td, th
 {
-   border: 1px #909098 solid;
    padding: 7px;
 }
 
@@ -100,7 +104,7 @@ table
    flex-wrap: wrap;
 }
 
-label
+.joli-texte
 {
 	color: #fbfbfe;
 	font-size: 20px;
@@ -129,7 +133,7 @@ input
 .ligne
 {
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    flex-wrap: wrap;
 }
 
@@ -176,6 +180,11 @@ input
    text-align: center;
 }
 
+.texte-blanc
+{
+   color: #fbfbfe;
+}
+
 .red
 {
 	color: red;
@@ -199,11 +208,11 @@ button
    border: 2px solid #42414d;
    border-radius: 9px;
    font-size: 1.2em;
-   /* width: 100%;*/
    padding: 10px 20px;
    margin: 8px 0;
    box-sizing: border-box;
    min-width: 200px;
+   background-color: #2b2a33;
 }
 
 button:hover{
@@ -214,7 +223,7 @@ button:hover{
 
 *
 {
-	background-color: #2b2a33;
+	/*background-color: #2b2a33;*/
 	color: #909098;
 	margin: 0;
 	padding: 0;
