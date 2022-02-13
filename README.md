@@ -1,7 +1,7 @@
 # Un site
 
 Code source de [ce site](https://edre2.github.io/).
-Site web avec une partie sur la mémoire et une sur enigma.
+Site web avec une partie sur la mémoire, une sur la cryptographie et une sur les nomrbes.
 
 
 ## Mémoire
@@ -21,14 +21,21 @@ Toutes les pages ci-dessous sont précédées de `memoire/` :
   
 - `apprendre-major-system.html` une page pour apprendre les associations (il faut taper le mot associé au nombre, puis taper sur <Entrer>)
 
-## Enigma
+## Cryptographie
 
-Pour l'instant, il n'y a qu'une seule page sur enigma : `enigma/enigma.html` qui vous permet de coder avec une machine enigma en javascript.
+Il n'y a qu'une seule page sur la cryptographie : `codage/codage.html` qui vous permet de crypter / décrypter des textes avec Vigenère, César, Enigma. \
+Pour voir les implémentations des fonctions pour coder avec Vigenère, César et pour décoder automatiquement Vigenère en `c++`, `python` et `javascript`, vous pouvez consulter : [ce repos](https://github.com/Edre2/outils/).
 Pour voir d'autres implémentation de machines enigma, vous pouvez consulter : [ce repos](https://github.com/Edre2/Enigma/).
+
+## Nombres
+
+Il n'y a qu'une seule page sur lres nombres : `nombres/nombres.html` qui vous permet de savoir si un nombre est premier, lister ses diviseurs ... \
+Pour voir les implémentations des fonctions en `c++`, `python` et `javascript`, vous pouvez consulter : [ce repos](https://github.com/Edre2/outils/).
 
 ## Utilisation
 
-Pour utiliser ce projet, téléchargez le code, puis ouvrez `index.html` dans votre naviguateur préféré.
+Pour utiliser ce projet, téléchargez le code, puis ouvrez `index.html` dans votre naviguateur préféré. \
+Ou allez  sur [ce site](https://edre2.github.io/).
 
 ## License
 
