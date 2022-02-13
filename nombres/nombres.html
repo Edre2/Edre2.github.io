@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!-- En-tête de la page -->
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="nombres.css" />
+        <script type="text/javascript" src="nombres.js"></script>
+       <title>Nombres</title>
+    </head>
+
+    <body onload="update_car()">
+        <h1><a href="../index.html">Nombres</a></h1>
+
+        <div id="main">
+
+            <div id="code" class="prendre-moitie-place">
+                <!-- <div>
+                    <textarea class="text_input" type="text" name="texte_a_coder" id="texte_a_coder" placeholder="Texte à coder" autofocus onkeyup="coder()"></textarea>
+                </div> -->                
+
+                <div id="options" class="espace-haut-bas">
+                    <input type="radio" id="estPrems" name="methode" value="estPrems" onclick="update_car()">
+                    <label for="estPrems">Tester si un nombre est premier   </label><br>
+                    <input type="radio" id="diviseurs" name="methode" value="diviseurs" onclick="update_car()">
+                    <label for="diviseurs">Lister les diviseurs d'un nombre</label><br>
+                    <input type="radio" id="nbspremsjusquan" name="methode" value="nbspremsjusquan" onclick="update_car()">
+                    <label for="nbspremsjusquan">Lister les nombres premier jusqu'au nombre</label><br>
+                    <input type="radio" id="autreBase" name="methode" value="autreBase" onclick="update_car()">
+                    <label for="autreBase">Convertir vers une autre base</label><br>
+                    <input type="radio" id="farey_approximation" name="methode" value="farey_approximation" onclick="update_car()">
+                    <label for="farey_approximation">Approximer un réel avec une fraction (Farey approximation)</label><br>
+                    <input type="radio" id="pgcd" name="methode" value="pgcd" onclick="update_car()">
+                    <label for="pgcd">Calculer le pgcd de deux nombres</label>
+                </div>
+
+                <div id="caracteristiques" class="espace-haut-bas">
+                    <label for="mot" class="joli-texte">Mot avec lequel coder :</label>
+                    <input type="test" id="mot" name="methode" value="mot">
+                </div>
+
+                <div id="bouton-automatique">
+                    <button id="automatique" >Automatique</button>
+                </div>
+
+                <div>
+                </div>
+            </div>
+
+            <div id="result" class="prendre-moitie-place">
+                <img id="copy" src="copy.png" alt="copy icon" style="width:25px;height:25px;" onclick="copyMeOnClipboard()" >
+            </div>
+                
+            </div>
+        </div>
+
+        <footer> 
+            <p id="droits" class="center"> Erik 2022 - GPL v3</p> 
+        </footer>
+    </body>
+</html>
