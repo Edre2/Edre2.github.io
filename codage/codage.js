@@ -381,7 +381,7 @@ class Enigma {
         this.rotor_rotation[0]++;
         
         let i = 0;
-        while ((this.rotor_rotation[i] % this.N == 0) && (i != this.N_rotors - 1)) {
+        while ((this.rotor_rotation[i] % this.N == 0) && (i < this.N_rotors - 1)) {
             this.rotor_rotation[i] = 0;
             this.rotors[i+1].tourner();
             this.rotor_rotation[i+1]++;
